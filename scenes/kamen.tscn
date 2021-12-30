@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 40.9946
+height = 89.4786
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 88.4001, 44.5746 )
+rotation = 1.55701
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -0.749153
+margin_top = 0.749153
+margin_right = 175.251
+margin_bottom = 84.7492
+__meta__ = {
+"_edit_use_anchors_": false
+}

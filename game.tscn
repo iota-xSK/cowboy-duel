@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/reset.gd" type="Script" id=1]
+[ext_resource path="res://andina/andina.tres" type="DynamicFont" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.368627, 0.364706, 0.356863, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.898039, 0.721569, 0.372549, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.25098, 0.243137, 0.227451, 1 )
+
+[node name="game" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+margin_left = 523.963
+margin_top = 10.0578
+margin_right = 560.963
+margin_bottom = 31.0578
+focus_mode = 0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = ExtResource( 2 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Reset"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
